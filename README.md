@@ -5,7 +5,7 @@
 Classify user reviews from the IMDB dataset as either **positive** or **negative**, enabling automated sentiment detection for movie feedback.
 
 ##  Project Overview  
-An end-to-end deep learning pipeline using a **Simple RNN** architecture to analyze text sentiment, integrated into a **Streamlit web app** and deployed on **Streamlit Cloud**.
+An end-to-end deep learning pipeline using a **GRU RNN** architecture to analyze text sentiment, integrated into a **Streamlit web app** and deployed on **Streamlit Cloud**.
 
 ##  Approach  
 - **Feature Engineering**  
@@ -13,11 +13,11 @@ An end-to-end deep learning pipeline using a **Simple RNN** architecture to anal
   - Convert categorical inputs to numerical format  
   - Standardize data for stable training  
 - **Modeling**  
-  - Simple RNN with Embedding layer  
+  - GRU RNN with Embedding layer  
   - Dropout for regularization  
   - Optimized using binary crossentropy loss  
 - **Serialization**  
-  - Save model weights (`.h5`) and preprocessing objects (`.pkl`) for reuse  
+  - Save model weights (`.keras`) and preprocessing objects (`.pkl`) for reuse  
 - **Web Integration**  
   - Streamlit app for real-time sentiment prediction  
   - Clean UI with text input and result display  
@@ -27,15 +27,14 @@ An end-to-end deep learning pipeline using a **Simple RNN** architecture to anal
 ##  Project Structure  
 ```
 imdb-sentiment/
-├── app.py                 # Streamlit frontend
-├── model.h5               # Trained RNN model
-├── tokenizer.pkl          # Tokenizer object
-├── requirements.txt       # Dependencies
-└── README.md              # Project overview
+├── app.py                               # Streamlit frontend
+├── imdb_sentiment_analysis.keras        # Trained RNN model
+├── requirements.txt                     # Dependencies
+└── README.md                            # Project overview
 ```
 
 ## 🌐 Live Demo  
-[Streamlit App Link](https://your-app-url.streamlit.app) 
+[Streamlit App Link](https://imdb-movie-review-sentiment-analysis-ayfreingpzdwjfiniyjy2g.streamlit.app/) 
 
 ## 🛠 Tech Stack  
 - Python, Pandas, NumPy  
@@ -43,4 +42,4 @@ imdb-sentiment/
 - Streamlit  
 
 ## 📬 Contact  
-For questions or collaboration, connect via [LinkedIn](https://www.linkedin.com/in/your-profile) 
+For questions or collaboration, connect via [LinkedIn](https://www.linkedin.com/in/kavanakpadaki/) 
